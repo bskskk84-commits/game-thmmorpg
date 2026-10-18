@@ -1,0 +1,1 @@
+{"name":"@siam/client","private":true,"type":"module","scripts":{"dev":"vite --host 0.0.0.0","build":"vite build"},"dependencies":{"@siam/shared":"*","phaser":"3.90.0","colyseus.js":"0.16.22"},"devDependencies":{"vite":"6.4.1"}}

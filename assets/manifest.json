@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "referenceStatus": "missing",
+  "runtimeRenderer": "apps/client/src/main.ts:Town",
+  "placeholder": "procedural chibi with facing arrow; no finished animation claimed",
+  "frameSize": {
+    "width": 96,
+    "height": 96
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 0.82
+  },
+  "directions": [
+    "north",
+    "east",
+    "south",
+    "west"
+  ],
+  "animations": {
+    "idle": {
+      "framesPerDirection": 4,
+      "fps": 6
+    },
+    "walk": {
+      "framesPerDirection": 8,
+      "fps": 10
+    },
+    "attack": {
+      "framesPerDirection": 6,
+      "fps": 10
+    },
+    "hurt": {
+      "framesPerDirection": 3,
+      "fps": 8
+    },
+    "death": {
+      "framesPerDirection": 6,
+      "fps": 8,
+      "loop": false
+    }
+  },
+  "characters": [
+    {
+      "id": "swordsman",
+      "status": "placeholder",
+      "atlas": "/assets/game/characters/swordsman.png",
+      "atlasData": "/assets/game/characters/swordsman.json"
+    },
+    {
+      "id": "knight",
+      "status": "planned",
+      "atlas": "/assets/game/characters/knight.png",
+      "atlasData": "/assets/game/characters/knight.json"
+    },
+    {
+      "id": "archer",
+      "status": "planned",
+      "atlas": "/assets/game/characters/archer.png",
+      "atlasData": "/assets/game/characters/archer.json"
+    },
+    {
+      "id": "healer",
+      "status": "planned",
+      "atlas": "/assets/game/characters/healer.png",
+      "atlasData": "/assets/game/characters/healer.json"
+    },
+    {
+      "id": "mage",
+      "status": "planned",
+      "atlas": "/assets/game/characters/mage.png",
+      "atlasData": "/assets/game/characters/mage.json"
+    },
+    {
+      "id": "rogue",
+      "status": "planned",
+      "atlas": "/assets/game/characters/rogue.png",
+      "atlasData": "/assets/game/characters/rogue.json"
+    },
+    {
+      "id": "muaythai",
+      "status": "planned",
+      "atlas": "/assets/game/characters/muaythai.png",
+      "atlasData": "/assets/game/characters/muaythai.json"
+    },
+    {
+      "id": "merchant",
+      "status": "planned",
+      "atlas": "/assets/game/characters/merchant.png",
+      "atlasData": "/assets/game/characters/merchant.json"
+    }
+  ],
+  "weapons": {
+    "tiers": [
+      "starter",
+      "rare",
+      "very_rare"
+    ],
+    "status": "reference_missing"
+  },
+  "consumables": {
+    "groups": [
+      "potion",
+      "food"
+    ],
+    "status": "reference_missing"
+  }
+}

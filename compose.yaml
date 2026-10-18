@@ -1,0 +1,17 @@
+services:
+  database:
+    image: postgres:17.6
+    environment:
+      POSTGRES_USER: siam
+      POSTGRES_PASSWORD: siam_local_only
+      POSTGRES_DB: siam
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U siam -d siam"]
+      interval: 5s
+      retries: 10
+volumes:
+  postgres-data:

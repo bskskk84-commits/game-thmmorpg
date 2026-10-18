@@ -1,0 +1,2 @@
+import { defineConfig } from '@playwright/test';
+export default defineConfig({testDir:'./tests',testMatch:'*.e2e.ts',timeout:45000,workers:1,use:{baseURL:'http://localhost:5173',launchOptions:{executablePath:process.env.CHROMIUM_PATH || '/usr/bin/chromium',args:['--no-sandbox']}},webServer:[{command:'npm run dev -w apps/server',url:'http://localhost:2567/health',reuseExistingServer:!process.env.CI},{command:'npm run dev -w apps/client',url:'http://localhost:5173',reuseExistingServer:!process.env.CI}]});
